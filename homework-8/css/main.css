@@ -1,0 +1,130 @@
+                                                  :root {
+                                                     --color-blue: #34b5ce;
+                                                     --black-color: #3e4c4e;
+                                                     --white-color: #ffffff
+                                                 }
+                                                 
+                                                 * {
+                                                     box-sizing: border-box;
+                                                     border: 0;
+                                                     outline: 0;
+                                                 }
+                                                 
+                                                 body {
+                                                     font-family: 'Roboto', sans-serif;
+                                                     height: 100%;
+                                                     background-color: white;
+                                                 }
+                                                 
+                                                 header {
+                                                     width: 100%;
+                                                     margin-top: 35px;
+                                                     border: 1px solid red
+                                                 }
+                                                 
+                                                 .header {
+                                                     display: flex;
+                                                     justify-content: space-between;
+                                                 }
+                                                 
+                                                 .container {
+                                                     max-width: 1200px;
+                                                     margin: 0 auto;
+                                                     padding: 25px 15px;
+                                                 }
+                                                 
+                                                 .logo {
+                                                     font-size: 30px
+                                                 }
+                                                 
+                                                 .logo span {
+                                                     color: var(--color-blue);
+                                                     text-transform: uppercase;
+                                                     font-weight: 800
+                                                 }
+                                                 
+                                                 .header-nav {
+                                                     width: 900px;
+                                                     display: flex;
+                                                     justify-content: space-around;
+                                                     align-items: center;
+                                                 }
+                                                 
+                                                 .header-nav-link {
+                                                     color: black;
+                                                     text-decoration: none;
+                                                     text-transform: uppercase;
+                                                     font-weight: 500;
+                                                 }
+                                                 
+                                                 .start-section {
+                                                     height: 400px;
+                                                     box-sizing: content-box;
+                                                     padding-top: 15px;
+                                                     position: relative;
+                                                     background: red;
+                                                     color: white;
+                                                     font-size: 11px;
+                                                     letter-spacing: 0.2em;
+                                                     text-align: center;
+                                                     text-transform: uppercase;
+                                                 }
+                                                 
+                                                 .start-section:after {
+                                                     content: "";
+                                                     position: absolute;
+                                                     left: 0;
+                                                     bottom: 0;
+                                                     width: 0;
+                                                     height: 0;
+                                                     border-bottom: 20px solid #eee;
+                                                     border-left: 525px solid transparent;
+                                                     border-right: 525px solid transparent;
+                                                 }
+                                                 
+                                                 .content-start {
+                                                     max-width: 780px;
+                                                     font-size: 28px;
+                                                 }
+                                                 
+                                                 #chevron {
+                                                     margin-top: 50px;
+                                                     color: var(--black-color);
+                                                     position: relative;
+                                                     text-align: center;
+                                                     padding: 42px;
+                                                     margin-bottom: 6px;
+                                                     height: 360px;
+                                                     width: 100%;
+                                                 }
+                                                 
+                                                 #chevron:before {
+                                                     content: '';
+                                                     position: absolute;
+                                                     top: 0;
+                                                     left: 0;
+                                                     height: 100%;
+                                                     width: 51%;
+                                                     border: 1px solid blue;
+                                                     transform: skew(0deg, 3deg);
+                                                 }
+                                                 
+                                                 #chevron:after {
+                                                     content: '';
+                                                     position: absolute;
+                                                     top: 0;
+                                                     right: 0;
+                                                     height: 100%;
+                                                     width: 50%;
+                                                     border: 1px solid blue;
+                                                     transform: skew(0deg, -3deg);
+                                                 }
+                                                 
+                                                 #chevron h1 {
+                                                     color: var(--color-blue);
+                                                     font-size: 34px
+                                                 }
+                                                 
+                                                 #chevron h5 {
+                                                     font-size: 19px
+                                                 }

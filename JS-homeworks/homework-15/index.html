@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .centered-content {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            /* margin-top: 40px */
+            transition: all .4s ease-out;
+        }
+        
+        .tabs {
+            display: flex;
+        }
+        
+        .tabs-title {
+            padding: 20px;
+            background-color: rgb(236, 118, 0);
+            cursor: pointer;
+        }
+        
+        .tabs .active {
+            background-color: rgb(33, 238, 26);
+        }
+        
+        .tabs-title a {
+            text-decoration: none;
+            color: #937341;
+        }
+        
+        #toTop {
+            display: block;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px
+        }
+        
+        #toTop {
+            transition: all 1.5s ease 0s;
+            display: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centered-content">
+        <ul class="tabs">
+            <li class="tabs-title active"><a href="#section1">Home</a></li>
+            <li class="tabs-title"><a href="#section2">Blog</a></li>
+            <li class="tabs-title"><a href="#section3">Pages</a></li>
+            <li class="tabs-title"><a href="#section4">About</a></li>
+            <li class="tabs-title"><a href="#section5">Contact</a></li>
+        </ul>
+        <ul class="tabs-content">
+            <div id="section1" class="tabs-content--item">
+                <h3>Item 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+
+            </div>
+            <div id="section2" class="tabs-content--item">
+                <h3>Item 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+            </div><button id="btn">Click</button>
+            <div id="section3" class="tabs-content--item">
+                <h3>Item 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+
+            </div>
+            <div id="section4" class="tabs-content--item">
+                <h3>Item 4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+
+            </div>
+            <div id="section5" class="tabs-content--item">
+                <h3>Item 5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, facere recusandae. Necessitatibus corporis deleniti maxime at non in natus eaque!</p>
+
+            </div>
+        </ul>
+
+    </div>
+    <img src="up.png" id="toTop">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
