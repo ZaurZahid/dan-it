@@ -2,7 +2,7 @@
    * 
    * @constructor
    * @param size        size of the hamburger
-   * @param stuffing    selected stuffing
+   * @param stuffing     selected stuffing
    * @throws {HamburgerException}  In case of incorrect usage
    */
   class Hamburger {

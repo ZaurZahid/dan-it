@@ -1,4 +1,4 @@
-/* Sizes, types of stuffings and toppings */
+/* Sizes , types of stuffings and toppings */
 Hamburger.SIZE_SMALL = {
     price: 50,
     kkal: 20,
